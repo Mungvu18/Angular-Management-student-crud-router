@@ -1,0 +1,24 @@
+<h1>Danh sách học viên</h1>
+<h3><a [routerLink]="'/student-list'">Back</a></h3>
+<table class="table table-dark">
+  <thead>
+  <tr>
+    <th scope="col">STT</th>
+    <th scope="col">Tên</th>
+    <th scope="col">Tuổi</th>
+    <th scope="col">Edit</th>
+    <th scope="col">Detail</th>
+    <th scope="col">Delete</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>{{student.id}}</td>
+    <td>{{student.name}}</td>
+    <td>{{student.age}}</td>
+    <td><a [routerLink]="'/student-update/'+student.id">Edit</a></td>
+    <td><a [routerLink]="'/student-detail/'+student.id">Detail</a></td>
+    <td><a [routerLink]="'/student-delete/'+student.id">Delete</a></td>
+  </tr>
+  </tbody>
+</table>
